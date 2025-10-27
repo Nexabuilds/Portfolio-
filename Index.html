@@ -1,0 +1,156 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Heritage Oluwatuyi — Web Developer & Graphics Designer</title>
+  <meta name="description" content="Portfolio — Heritage Oluwatuyi. Colourful, creative web developer & graphics designer." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body{background:#050406;color:#fff;font-family:'Inter',sans-serif;margin:0;padding:0;scroll-behavior:smooth;overflow-x:hidden}
+    header,footer{padding:20px 40px;background:#0b0b0d;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;position:relative;z-index:10}
+    .logo{font-weight:800;font-size:24px;color:#d4af37}
+    nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:600;transition:color .3s}
+    nav a:hover{color:#d4af37}
+    .hero{position:relative;overflow:hidden;padding:120px 20px;text-align:center;color:#fff;background:linear-gradient(135deg,#ff00cc,#3333ff);}
+    .hero::before,.hero::after{content:'';position:absolute;border-radius:50%;filter:blur(90px);opacity:0.4;animation:float 10s ease-in-out infinite alternate}
+    .hero::before{top:-100px;left:-100px;width:300px;height:300px;background:#ff9a00}
+    .hero::after{bottom:-100px;right:-100px;width:400px;height:400px;background:#00ffd5}
+    @keyframes float{from{transform:translateY(0)}to{transform:translateY(40px)}}
+    .hero h1{font-size:52px;margin-bottom:10px;animation:fadeUp 1.2s ease}
+    .hero p{font-size:18px;color:#ddd;animation:fadeUp 1.6s ease}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+    .section{padding:60px 40px;opacity:0;transform:translateY(50px);transition:all 1s ease}
+    .section.visible{opacity:1;transform:translateY(0)}
+    .section h2{color:#d4af37;margin-bottom:20px;font-size:30px;text-align:center}
+    .about{max-width:900px;margin:auto;text-align:center;line-height:1.7;color:#ccc}
+    .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;margin-top:40px;text-align:center}
+    .skill{background:#0f0f12;padding:20px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,.5);transition:transform .3s,box-shadow .3s}
+    .skill:hover{transform:translateY(-8px);box-shadow:0 0 20px rgba(212,175,55,0.4)}
+    .skill h3{color:#d4af37;margin:0 0 10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:40px}
+    .card{background:#0f0f12;border-radius:16px;overflow:hidden;box-shadow:0 0 15px rgba(0,0,0,0.6);transition:transform 0.3s,box-shadow 0.3s}
+    .card:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 0 25px rgba(212,175,55,0.4)}
+    .thumb{height:200px;background-size:cover;background-position:center;transition:transform .4s ease}
+    .card:hover .thumb{transform:scale(1.1)}
+    .meta{padding:16px}
+    .meta h3{margin:0 0 8px;color:#fff}
+    .meta p{margin:0;color:#bdb6b6;font-size:14px}
+    .contact-form{max-width:600px;margin:auto;text-align:center}
+    .contact-form input,.contact-form textarea{width:100%;padding:12px;margin:8px 0;background:#0f0f12;border:1px solid #333;border-radius:8px;color:#fff}
+    .contact-form button{background:#d4af37;border:none;padding:12px 30px;color:#000;font-weight:700;border-radius:8px;cursor:pointer;transition:background .3s,transform .3s}
+    .contact-form button:hover{background:#ffcc00;transform:translateY(-3px)}
+    footer{text-align:center;padding:20px;background:#0b0b0d;color:#aaa}.resume-download{text-align:center;margin-top:30px}
+.resume-download .tagline{color:#d4af37;font-style:italic;font-size:1.1rem;margin-bottom:10px}
+.resume-btn{background:linear-gradient(45deg,#d4af37,#000);color:white;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.3);transition:all .3s ease}
+.resume-btn:hover{background:linear-gradient(45deg,#000,#d4af37);transform:translateY(-3px)}
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">Heritage Oluwatuyi</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section class="hero">
+  <h1>Creative Web Developer & Graphics Designer</h1>
+  <p>Turning imagination into captivating digital experiences</p>
+</section><section id="about" class="section">
+  <h2>About Me</h2>
+  <div class="about">
+    <p>I'm <strong>Heritage Oluwatuyi</strong>, a passionate web developer and graphics designer focused on building aesthetic and user-friendly experiences. I blend creativity with modern technologies to craft designs that not only look amazing but perform flawlessly across devices.</p>
+  </div>
+  <div class="resume-download">
+    <p class="tagline">“Creativity meets technology — download my resume to learn more.”</p>
+    <a href="assets/Heritage_Oluwatuyi_Resume.pdf" download class="resume-btn">Download Resume</a>
+  </div>
+</section><section id="skills" class="section">
+  <h2>Skills & Expertise</h2>
+  <div class="skills">
+    <div class="skill"><h3>Web Development</h3><p>HTML, CSS, JavaScript, React</p></div>
+    <div class="skill"><h3>Graphic Design</h3><p>Adobe Photoshop, Illustrator, CorelDRAW</p></div>
+    <div class="skill"><h3>UI/UX</h3><p>Wireframing, Prototyping, Figma</p></div>
+    <div class="skill"><h3>Branding</h3><p>Logo design, Identity Systems</p></div>
+  </div>
+</section><section id="portfolio" class="section">
+  <h2>Project Showcase</h2>
+  <div class="grid">
+    <article class="card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1502880195258-0d6b8f48f351?auto=format&fit=crop&w=800&q=80');"></div>
+      <div class="meta">
+        <h3>Modern Business Website</h3>
+        <p>Developed a responsive, SEO-friendly website for a corporate client with modern UI/UX principles and optimized performance.</p>
+        <a href="#" style="color:#d4af37;text-decoration:none;font-size:14px;">View Project →</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80');"></div>
+      <div class="meta">
+        <h3>Portfolio Web App</h3>
+        <p>Designed and coded a single-page portfolio app showcasing animations, transitions, and dark/light mode switching using JavaScript.</p>
+        <a href="#" style="color:#d4af37;text-decoration:none;font-size:14px;">View Project →</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80');"></div>
+      <div class="meta">
+        <h3>Graphics Branding Kit</h3>
+        <p>Created a full corporate identity including logo, color palette, and visual assets for social media branding.</p>
+        <a href="#" style="color:#d4af37;text-decoration:none;font-size:14px;">View Project →</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&w=800&q=80');"></div>
+      <div class="meta">
+        <h3>E-Commerce UI Design</h3>
+        <p>Designed an interactive e-commerce interface with sleek product displays, cart animations, and responsive checkout flow.</p>
+        <a href="#" style="color:#d4af37;text-decoration:none;font-size:14px;">View Project →</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1556767576-cfba0b9a3f2c?auto=format&fit=crop&w=800&q=80');"></div>
+      <div class="meta">
+        <h3>Creative Poster Series</h3>
+        <p>Designed a colorful poster series highlighting the fusion of technology and art for a design exhibition campaign.</p>
+        <a href="#" style="color:#d4af37;text-decoration:none;font-size:14px;">View Project →</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1507209696998-3c532be9b2b3?auto=format&fit=crop&w=800&q=80');"></div>
+      <div class="meta">
+        <h3>Landing Page Animation</h3>
+        <p>Developed a modern animated landing page using HTML, CSS and JS showcasing motion effects and smooth scrolling interactions.</p>
+        <a href="#" style="color:#d4af37;text-decoration:none;font-size:14px;">View Project →</a>
+      </div>
+    </article>
+  </div>
+</section><section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <div class="contact-form">
+    <form action="mailto:emmanueloluwatuyi05@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section><footer>
+  <p>© 2025 Heritage Oluwatuyi — Web Developer & Graphics Designer | Crafted with passion and creativity.</p>
+</footer><script>
+  const sections=document.querySelectorAll('.section');
+  const reveal=()=>{
+    const triggerBottom=window.innerHeight*0.85;
+    sections.forEach(sec=>{
+      const boxTop=sec.getBoundingClientRect().top;
+      if(boxTop<triggerBottom){sec.classList.add('visible');}
+    });
+  };
+  window.addEventListener('scroll',reveal);
+  reveal();
+</script></body>
+</html>
